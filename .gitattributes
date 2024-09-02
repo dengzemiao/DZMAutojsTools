@@ -1,1 +1,1 @@
-Autox-v7-arm64-v8a-release-7.0.2.apk filter=lfs diff=lfs merge=lfs -text
+Autox-v6-universal-release-6.6.7.apk filter=lfs diff=lfs merge=lfs -text
