@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Color from Image</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+      }
+      .title {
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+      .image-input {
+        margin-top: 30px;
+      }
+      #imageCanvas {
+        margin-top: 30px;
+      }
+      #colorInfo {
+        margin-top: 30px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">选择一张图片获取指定坐标与色值</div>
+    <input class="image-input" type="file" id="imageInput" accept="image/*">
+    <canvas id="imageCanvas"></canvas>
+    <div id="colorInfo"></div>
+  </div>
+  <script>
+    const imageInput = document.getElementById('imageInput');
+    const canvas = document.getElementById('imageCanvas');
+    const ctx = canvas.getContext('2d');
+    const colorInfo = document.getElementById('colorInfo');
+
+    imageInput.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = new Image();
+          img.src = e.target.result;
+          img.onload = function() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+          };
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    canvas.addEventListener('click', function(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const pixelData = ctx.getImageData(x, y, 1, 1).data;
+      const r = pixelData[0];
+      const g = pixelData[1];
+      const b = pixelData[2];
+      const a = pixelData[3] / 255;
+      colorInfo.textContent = `坐标: (${x}, ${y}) - 色值: rgba(${r}, ${g}, ${b}, ${a.toFixed(2)})`;
+      colorInfo.style.color = `rgba(${r}, ${g}, ${b}, ${a})`;
+    });
+  </script>
+</body>
+</html>
