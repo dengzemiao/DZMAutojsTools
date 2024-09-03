@@ -16,7 +16,7 @@
 
   - 如果 `auto.js` 打不开，可以使用 [autoxjs](http://doc.autoxjs.com/#/) ，它是基于 `auto.js 4.1.1` 进行维护的。
 
-  - 其实更推荐 [autoxjs](https://github.com/kkevsekk1/AutoX/releases) 这个，代码写法是一致的，而且一个包就能搞定编写跟打包，而 `autojs` 则拆分成了两个包。
+  - 其实更推荐 [autoxjs](https://github.com/kkevsekk1/AutoX/releases) 这个，代码写法是一致的，而且一个包就能搞定编写跟打包，而 `autojs` 则拆分成了两个包，如果工程内的 `Autox.apk` 安卓失败，可以到官网进行下载，可以通过下面的方式获得当前设备的 `cpu 类型` 后进行下载。
 
   - 下载 `apk` 后，丢入模拟器或真机中，包内已经下载好了，根据需要安装即可。附：[查看安卓手机 CPU 类型](https://blog.csdn.net/zz00008888/article/details/133696691)，不清楚就直接下通用版本。
 
