@@ -8,9 +8,9 @@
 
 - auto.js 开发文档
 
-  - http://doc.autoxjs.com/#/documentation : `autoxjs` 该文档主要包含 `auto.js 4.1.1` 的 `api`
+  - http://doc.autoxjs.com/#/documentation : `autoxjs` 该文档主要包含 `auto.js 4.1.1` 的 `api`，部分组件相关介绍缺失。
 
-  - http://www.autojs.cc/docs/zh/v8/index.htm ：`autojs` 该文档还包含了最新版本的 `api`
+  - http://www.autojs.cc/docs/zh/v8/index.htm ：`autojs` 该文档还包含了最新版本的 `api`，文档更全，看第一代文档即可。
 
 - 下载 [auto.js 4.1.1 免费版](http://www.autojs.cc/)
 
