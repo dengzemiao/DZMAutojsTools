@@ -16,7 +16,15 @@
 
   - 如果 `auto.js` 打不开，可以使用 [autoxjs](http://doc.autoxjs.com/#/) ，它是基于 `auto.js 4.1.1` 进行维护的。
 
-  - 其实更推荐 [autoxjs](https://github.com/kkevsekk1/AutoX/releases) 这个，代码写法是一致的，而且一个包就能搞定编写跟打包，而 `autojs` 则拆分成了两个包，如果工程内的 `Autox.apk` 安卓失败，可以到官网进行下载，可以通过下面的方式获得当前设备的 `cpu 类型` 后进行下载。
+  - 其次 [autoxjs](https://github.com/kkevsekk1/AutoX/releases) 这个，大部分代码写法是一致的，能一个包搞定编写跟打包，`autojs` 则拆分成了两个包，如果工程内的 `Autox.apk` 安卓失败，可以到官网进行下载，可以通过下面的方式获得当前设备的 `cpu 类型` 后进行下载。
+
+  - `autojs` 与 `autoxjs` 使用上的差异：
+
+    - `autojs`：在 `js` 语法上只支持老的写法，一些新的写法与函数可能不支持，但是它的 `apk` 调试应用体验更好，遇到代码 `bug` 不会直接闪退，因为 `无障碍模式` 每次重启 `app` 都需要重新打开。
+
+    - `autoxjs`：在 `js` 语法上只支持新的写法，一些新的写法与函数都支持，而且在 `autojs` 的基础上加了不少个性化系统的函数，例如 `floaty.checkPermission()` 之类的等等。但是它的调试体验不太好，编写代码时遇到问题直接闪退，导致每次都要在打开一次 `无障碍模式`。
+
+    - 兼容性： `autojs` 写出的代码可以直接在 `autoxjs` 中跑起来，而 `autoxjs` 写的代码则可能只能在 `autoxjs` 中跑，无法在 `autojs` 中运行，会因为不支持的一些语法与写法、函数导致报错。
 
   - 下载 `apk` 后，丢入模拟器或真机中，包内已经下载好了，根据需要安装即可。附：[查看安卓手机 CPU 类型](https://blog.csdn.net/zz00008888/article/details/133696691)，不清楚就直接下通用版本。
 
