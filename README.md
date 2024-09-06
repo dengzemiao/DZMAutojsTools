@@ -14,6 +14,8 @@
 
 - 下载 [auto.js 4.1.1 免费版](http://www.autojs.cc/)
 
+  - `auto.js 打包插件` 安装到手机后是看不到的，默认 `auto.js 4.1.1 免费版` 不支持打包，安装后则可以进行打包，相当于激活了打包功能，而不是多一个 `打包 app`。
+
   - 如果 `auto.js` 打不开，可以使用 [autoxjs](http://doc.autoxjs.com/#/) ，它是基于 `auto.js 4.1.1` 进行维护的。
 
   - 其次 [autoxjs](https://github.com/kkevsekk1/AutoX/releases) 这个，大部分代码写法是一致的，能一个包搞定编写跟打包，`autojs` 则拆分成了两个包，如果工程内的 `Autox.apk` 安卓失败，可以到官网进行下载，可以通过下面的方式获得当前设备的 `cpu 类型` 后进行下载。
