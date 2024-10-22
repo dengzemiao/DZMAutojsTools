@@ -36,7 +36,7 @@
 
 - 下载 [VSCode](https://code.visualstudio.com/)
 
-  - 安装插件 [Auto.js-Autox.js-VSCodeExt]：`auto.js` 或 `autox.js` 需要使用的。
+  - 安装插件 [Auto.js-Autox.js-VSCodeExt]：`auto.js` 或 `autox.js` 需要使用的，如果搜不到了，可以使用包内的 `aaroncheng.auto-js-vsce-fixed-1.110.0.vsix` 从本地导入添加插件，只是留个备份。
 
   - 如何结合以上工具进行使用，请看文章 [Autox.js 脚本开发环境搭建，从案例到打包 apk（详细流程）](https://blog.csdn.net/zz00008888/article/details/133711217)，文章内使用的是真机，但操作是一样。
 
