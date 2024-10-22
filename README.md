@@ -4,6 +4,8 @@
 
 - [自用案例](https://github.com/dengzemiao/DZMAutoxjsScripts)
 
+- 有 `autojs pro 9.3.11` 版本，不方便公开！
+
 ## 二、安装与文档
 
 - auto.js 开发文档
